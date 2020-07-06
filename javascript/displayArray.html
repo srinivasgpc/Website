@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Javascript</title>
+  </head>
+  <!-- displaying grp of array with for loops-->
+
+  <body>
+    <div id="tweets"></div>
+    <script type="text/javascript">
+      var tweetstring = "";
+      var tweets = ["hi ", "hello", "hold", "bubye"];
+
+      for (i = 0; i < tweets.length; i++) {
+        tweetstring = tweetstring + "<p>" + tweets[i] + "<p>";
+      }
+      document.getElementById("tweets").innerHTML = tweetstring;
+    </script>
+  </body>
+</html>

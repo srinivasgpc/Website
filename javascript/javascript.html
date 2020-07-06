@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Javascript</title>
+  </head>
+
+  <body>
+    <p>Make the number to be guess by the computer</p>
+    <p>
+      <select id="myNumber">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <button onClick="handleClick()">
+        Guess
+      </button>
+    </p>
+    <script type="text/javascript">
+      function handleClick() {
+        var mynumber = document.getElementById("myNumber").value;
+        var gotIt = false;
+        var NumberOfGuesses = 1;
+
+        while (gotIt == false) {
+          var randomNumber = Math.floor(Math.random() * 6);
+          if (randomNumber == mynumber) {
+            gotIt = true;
+            alert(
+              "Number you guess is " +
+                mynumber +
+                ", It took me " +
+                NumberOfGuesses +
+                " Guesses"
+            );
+            //correct
+          } else {
+            NumberOfGuesses++;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

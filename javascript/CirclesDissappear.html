@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>CirclesVanish</title>
+    <style>
+      .dot1 {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(255, 196, 0);
+        border-radius: 100%;
+        display: inline-block;
+        margin: 50px;
+      }
+      .dot2 {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(51, 255, 0);
+        border-radius: 100%;
+        display: inline-block;
+        margin: 50px;
+      }
+      .dot3 {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(80, 147, 163);
+        border-radius: 100%;
+        display: inline-block;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="t1" class="dot1"></span>
+    <span id="t2" class="dot2"></span>
+    <span id="t3" class="dot3"></span>
+    <script>
+      document.getElementById("t1").onclick = function () {
+        document.getElementById("t1").style.display = "none";
+      };
+      document.getElementById("t2").onclick = function () {
+        document.getElementById("t2").style.display = "none";
+      };
+      document.getElementById("t3").onclick = function () {
+        document.getElementById("t3").style.display = "none";
+      };
+    </script>
+  </body>
+</html>
